@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+	padding: 0;
+	background-color: #ebf2f5;
+	height: 100%;
+}
+
+a {
+  color: inherit;
+} 
+
+#root {
+  display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	& svg {
+		font-size: 22px;
+	}
+}
+
+.container {
+  width: 100%;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+@media screen and (min-width: 100vh) {
+  .container {
+    width: 100%;
+  }
+}
+
+@import './normalize.scss';
+@import './reset.scss';
