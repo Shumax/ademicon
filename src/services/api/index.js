@@ -11,7 +11,7 @@ function login(user) {
     .then(
       async (response) => {
         if (response.ok) {
-          const resp = await response.json();
+          const resp = await response.status;
           return resp;
         }
         const resp = await response.status;
