@@ -1,8 +1,8 @@
 .background {
-	display: flex;
 	width: 100vw;
 	height: 100vh;
-
+	display: flex;
+	
 
 	&__footer {
 		width: 100%;
@@ -16,6 +16,7 @@
 	&__banner {
 		width: 100vw;
 		height: 100vh;
+		position: relative;
 	}	
 	&__logo {
 		margin-top: 25px;
