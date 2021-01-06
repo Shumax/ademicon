@@ -3,13 +3,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import { signIn } from '../store/middleware/user';
 
 import Background from '../components/Background';
+import Alert from '../components/Alert';
 import useForm from '../hooks';
 
-import '../styles/components/Home.scss';
+import '../styles/pages/Home.scss';
 
 export default function Home() {
 	const dispatch = useDispatch();
-	const isLogged = useSelector(state => state.user.isLogged);
+	const alert = useSelector(state => state.user.alert);
 	const message = useSelector(state =>  state.user.message);
 	
 	const initialValues = {
@@ -24,14 +25,13 @@ export default function Home() {
 		event.preventDefault();
 		await dispatch(signIn(values));
 		clearForm();
-		if (!isLogged) {
-			console.log(message)
-			console.log(isLogged)
-		}
 	}
+
+
+	console.log(alert)
 	return (
 		<Background>
-			
+			{alert && <Alert message={message}/>}
 			<div className='home'>
 				<form className='home__login' onSubmit={handleSubmit}>
 					<nav className='container'>

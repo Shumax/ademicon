@@ -5,6 +5,7 @@ import api from '../../services/api';
 const {
 	userAuthorized,
 	userUnauthorized,
+	handleClose,
 } = UserCreator;
 
 export const signIn = (values) => (dispatch) => {
@@ -22,4 +23,7 @@ export const signIn = (values) => (dispatch) => {
 				
 			},
 		);
+};
+export const closeAlert = () => (dispatch) => {
+	dispatch(handleClose());
 };
