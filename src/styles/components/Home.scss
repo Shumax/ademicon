@@ -1,7 +1,66 @@
 .home {
 	position: absolute;
-	
-	&__form{
-		font-size: larger;
+
+
+	&__login{
+		box-shadow: 20px 20px 25px #0000001A;
+		border: 1px solid #999799;
+		border-radius: 5px;
+
+		width: 400px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    z-index: 1000;
+		margin: 80px 50vw;
+
+		@media screen and (max-width: 800px) {
+			width: 90vw;
+			margin: 20px;
+		}
+		&--button-control{
+			
+			max-width: 480px;
+		}
+		
+		& input {
+			width: 100%;
+			height: 50px;
+			margin: 0 0 1rem 0;
+			background: #F5F4F6;
+			border: 1px solid #5a5a5a;
+			border-radius: 5px;
+			opacity: 1;
+			max-width: 30rem;
+		}	
+		& a {
+			margin-top: 1.2rem;
+			margin-right: 100%;
+			color: #10033b;	
+			opacity: .85;
+			text-decoration: underline;
+			white-space: nowrap;
+		}
+		& button {
+			padding: 8px 16px;
+			margin: 10% 0 0 70%;
+			height: auto;
+			background: #b21010 0% 0% no-repeat padding-box;
+			border-radius: 50px;
+			opacity: 1;
+			color: #fff;
+			cursor: pointer;
+			border: 1px solid #12DB89;
+		}
+		h1{
+			margin-top: 70px;
+			margin-bottom: 2rem;
+			font-size: 30px;
+		}
+	}
+
+	.container {
+		margin: 16px;
+   	width: auto;
 	}
 }

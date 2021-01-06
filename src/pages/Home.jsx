@@ -24,8 +24,35 @@ export default function Home() {
 	console.log(message)
 	return (
 		<Background>
+			
 			<div className='home'>
-				<p>{message}</p>
+				<form className='home__login'>
+					<nav className='container'>
+					<h1>Login</h1>
+					<input 
+						type='text'
+						placeholder='Grupo'
+						required
+					/>
+					<input 
+						type='text'
+						placeholder='Cota'
+						required
+					/>
+					<input 
+						type='password'
+						placeholder='Senha'
+						required
+					/>
+					<a href='/'>Esqueceu a senha?</a>
+					<div className='home__login--button-control'>
+					<button>Acessar</button>
+					</div>
+					
+					</nav>
+					
+				</form>
+
 			</div>
 		</Background>
 	);
