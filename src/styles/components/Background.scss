@@ -1,0 +1,24 @@
+.background {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+
+
+	&__footer {
+		width: 100%;
+    top: 75%;
+    padding-bottom: 100rem;
+    background-color: red;
+    position: fixed;
+    display: flex;
+	}
+
+	&__banner {
+		width: 100vw;
+		height: 100vh;
+	}	
+	&__logo {
+		margin-top: 25px;
+		width: 35vw;
+	}
+}
