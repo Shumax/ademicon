@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Teste Full Stack - Ademicon
+	
+## Objetivo
+- Replicar UI utilizando HTML, CSS e Javascript
+- Adicionar validações no formulário com Javascript
+- Página precisa ser responsiva
+- Atenção aos detalhes (pixel perfect)
+- Criar uma API de autenticação (preferência NodeJS)
+- Desenvolver a página de login (link abaixo) e consumar sua API.
+- Readme com a explicação de como foi desenvolvido a aplicação
+- PLUS:
+    - Utilizar Material Design
+    - Sequenciar os commits
+    - ReactJs
+    - SASS/SCSS
+    - Styled Components
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tela a ser desenvolvida:
 
-## Available Scripts
+## ** IMPORTANTE: Desenvolver tela - Login full screen (tela grande)
 
-In the project directory, you can run:
+[https://www.notion.so/ademitech/Login-Web-19caffeab6fa420db50a890ee0502e25](https://www.notion.so/Login-Web-19caffeab6fa420db50a890ee0502e25)
 
-### `yarn start`
+## Endpoints
+* API em produção: [API Local Ademicon](https://github.com/Shumax/api-ademicon)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Dependências do Projeto
+```json
+{
+	"node-sass": "4",
+	"react": "^17.0.1",
+	"react-dom": "^17.0.1",
+	"react-icons": "^4.1.0",
+	"react-redux": "^7.2.2",
+	"react-router-dom": "^5.2.0",
+	"react-scripts": "4.0.1",
+	"redux": "^4.0.5",
+	"redux-persist": "^6.0.0",
+	"redux-thunk": "^2.3.0",
+	"reduxsauce": "^1.2.0",
+	"web-vitals": "^0.2.4"
+}
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Iniciar o projeto:
+* Instale as dependências do projeto com o comando *yarn install* ou *npm install*.
+* Inicie o projeto com comando *yarn start* ou *npm start* / *npm run start*.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Requisitos:
+* **[Node v14.10.0](https://nodejs.org/en/)** - ou superior, instalado em seu computador.
+* **[Create React App](https://github.com/facebook/create-react-app)**
