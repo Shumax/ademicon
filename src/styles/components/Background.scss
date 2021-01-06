@@ -4,7 +4,7 @@
 
 
 	&__footer {
-		width: 100%;
+		width: 100vw;
     top: 75%;
     padding-bottom: 100rem;
     background-color: red;
@@ -12,12 +12,13 @@
 	}
 
 	&__banner {
-		width: 100%;
+		width: 100vw;
 		height: 100vh;
 		
-		@media screen and (max-width: 400px) {
-			width: 400px;
-			height: 500px;
+		@media only screen and (min-device-width : 320px) 
+		and (max-device-width : 480px) {
+			width: 100vw;
+			height: 100vh;
 		}
 	}	
 	&__logo {
