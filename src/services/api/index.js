@@ -1,4 +1,4 @@
-const url = 'http://localhost:3000'
+const url = 'http://localhost:8080'
 
 function login(user) {
   return fetch(`${url}/login`, {
@@ -10,8 +10,9 @@ function login(user) {
   })
     .then(
       async (response) => {
+				console.log(response)
         if (response.ok) {
-          const resp = await response.status;
+          const resp = await response.json();
           return resp;
         }
         const resp = await response.status;

@@ -3,25 +3,24 @@ import { createActions, createReducer } from 'reduxsauce';
 
 export const { Types, Creators } = createActions({
 	userAuthorized: ['user'],
-	userUnauthorized: '',
+	userUnauthorized: ['message'],
 });
 
 const initialState = {
-	user: {},
 	isLogged: false,
 	message: '',
 };
 
 const login = (state = initialState, action) => ({
 	...state,
-	user: action.user,
 	isLogged: true,
+	message: 'Usuário Logado!'
 });
 
 const error = (state = initialState, action) => ({
 	...state,
 	isLogged: false,
-	message: action
+	message: action.message
 });
 
 export const handlers = {
